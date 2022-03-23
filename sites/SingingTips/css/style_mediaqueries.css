@@ -1,0 +1,57 @@
+@media only screen and (max-width: 4000px) {
+  .main_3_openingimg article img {
+    width: 100%;
+    margin:  0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  aside {
+    display: none;    
+  }
+  #main {
+    
+    width: 100%;
+    margin: 0;
+    display: inline;
+    overflow: hidden;
+  }
+  main{
+    width: 100%;
+    display: inline;
+    overflow: hidden;
+    
+  }
+
+#main_3_author{
+  display: flex;
+ 
+}
+#main_3_author article{
+
+  vertical-align: text-bottom;
+}
+#main_3_author article img{
+  width: 20%;  
+  float:  left;
+  vertical-align: text-bottom;
+}
+#main_3_author article p{
+  width:  65%;
+  //float:  left;
+  padding: 3%;
+  margin: 1%;
+  display:  block;
+  position: inherit;
+}
+#authorDescription p{
+  padding: 1%;
+}
+
+header{
+   
+
+    border: solid black 1px;
+  }
+
+}
