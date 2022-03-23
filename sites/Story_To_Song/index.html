@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Story To Song</title>
+	  <style>
+		body {
+			color:white;
+			background-color: #333;
+		}
+	  	#id_nav_container {
+			width:100%,
+			margin: 0 auto,
+			text-align:center,
+			min-width:280px,
+		}
+		#id_main_container {
+			width:75%,
+			margin: 0 auto,
+			text-align:center,
+			min-width:280px,
+			color:white,
+			background-color:black,
+		}
+		#id_first_wrapper{
+			color:white;
+			background-color: #333;
+		}
+		.btnLyricType {
+			width:15%,
+		}
+		
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		  position: -webkit-sticky; /* Safari */
+		  position: sticky;
+		  top: 0;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+		  background-color: #111;
+		}
+
+		.active {
+		  background-color: #4CAF50;
+		}
+	  </style>
+   </head>
+
+   <body onload="focusInput()">
+   		<div id="id_main_container" style="text-align:center;width: 75%;margin: 0 auto;border-style: dotted;border-color:aqua;">
+			<nav>
+				<div id="id_nav_container" style="border-style: dotted;">
+					<ul>
+					  <li><a class="active" href="#home">Home</a></li>
+					  <li><a href="#news">Account</a></li>
+					  <li><a href="#contact">About</a></li>
+					</ul>
+				</div>
+			</nav>
+			<content>
+				<div id="id_first_wrapper" style="width:100%;">
+					<h1>Story To Song</h1>
+					<h4>Convert short stories to a structured song</h4>
+					<br />
+					<textarea id="id_story" rows = "10" name = "description" style="width:95%;max-width:95%" placeholder="Copy and paste a short story here.."></textarea>
+					<br />
+					<input type = "submit" onclick="generateStory()"  style="width:100%;"/>
+					<br />
+					<br />
+					
+					<button name="btnLyricType" >Style 1</button>
+					<button name="btnLyricType" >Style 2</button>
+					<button name="btnLyricType" >Style 3</button>
+					<button name="btnLyricType" >Style 4</button>
+					<button name="btnLyricType" >Style 5</button>
+					
+					<br />
+					<br />
+					<span style="font-weight:bold;">Count of lines:&nbsp</span>
+					<span style="font-weight:bold;" id="count_of_name_storyline" name="name_storyline"></span>
+					<p id="test" name="name_storyline">test</p>	  
+				</div>
+			</content>  		
+
+
+			<footer>
+				<div style="text-align:center;width: 100%;margin: 0 auto;border-style: dotted;">
+					<h5>Welcome To STS</h5>
+					<p>Bradley Bahab Inc. © Copyright 2021</p>
+				</div>
+			</footer>
+		</div>
+		
+		<script>
+		function generateStory() {
+			var story = document.getElementById("id_story").value;
+			var replace = "";
+			var search = "";
+			var wordCount = 0;
+			replace = '</p><p name="name_storyline">';
+			
+			wordCount = WordCount(story);
+			console.log("WORD COUNT: " + wordCount);
+						
+			
+			search = '.';			
+			result = story.replaceAll(search, replace);	 // <----- use story as	string source	
+			search = ',';			
+			result = result.replaceAll(search, replace); // <----- use result as string source
+			search = " and ";			
+			result = result.replaceAll(search, replace); // <----- use result as string source			
+			search = " — ";			
+			result = result.replaceAll(search, replace); // <----- use result as string source		
+			search = " lover ";			
+			result = result.replaceAll(search, ' <i style="color:red;">lover</i> '); // <----- use result as string source					
+			
+			
+			
+			
+			document.getElementById("test").innerHTML = result			
+			var name_storyline_count = document.getElementsByName("name_storyline").length;
+			document.getElementById("count_of_name_storyline").innerHTML = name_storyline_count;		  
+		}
+		function replaceAll(string, search, replace) {
+		  return string.split(search).join(replace);
+		}
+		function focusInput() {
+			document.getElementById("id_story").focus();
+		}
+		function WordCount(str) {
+		   return str
+			 .split(' ')
+			 .filter(function(n) { return n != '' })
+			 .length;
+		}
+		function detectEmotion(word)
+		{
+			
+		}
+	</script>  
+   </body>   
+</html>
