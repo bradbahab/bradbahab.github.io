@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content= "width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+@viewport {
+  zoom: 1.0;
+  min-zoom: 1.0;
+  max-zoom: 2.0;
+}
+
+@media screen and (min-width: 1000px) {
+  body{
+
+  }
+  #navContainer {
+    min-height: 110px;
+  }
+  
+}
+
+p {
+	margin:0;
+	padding:0;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+  min-width: 1300px;
+}
+  
+#fol {
+	filter: invert(100);
+}
+
+.zones{
+	margin: 10%;
+}  
+  
+#navContainer {
+	width:100%;
+	height:110px;
+	min-height: 110px;
+	background-color:red;	
+	margin: auto;
+}
+
+#subNavContainer{
+	height:98.9%;
+	border:solid 1px white;
+	margin: auto;
+	
+}
+
+#section_one,
+#section_two,
+#section_three,
+#section_four,
+#section_five {
+	float:left;	
+	height:100%;
+} 
+
+
+.section_one_empty_div,
+.section_two_empty_div{
+	height:20%;
+	width:100%;
+	background-color: black;
+	margin-top:0;
+}
+
+
+#section_one{
+	width:40%;
+	background-color:black;	
+	
+	
+}
+.section_one_content_div{
+	height:60%;
+	width:100%;
+	background-color: black;
+	margin-top:0;
+	display:block;
+}
+
+.section_one_content_div p{
+	float:left;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	margin-left: 3%;
+	padding-top:5%;
+	padding-bottom:5%;
+	padding-left:2%;
+	padding-right:2%;
+	font-size:1.2vw;
+	font-weight:bold;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 50%;
+}
+
+.section_one_content_div p a{
+	text-decoration: none;
+	color: white;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+.section_one_content_div p:hover{
+	font-size:1.35vw;
+	cursor:pointer;
+	font-style: italic;
+	background: rgba(56, 245, 255, 0.15);
+	transition-duration: 1s;	
+}
+
+  
+#section_two{
+	width:20%;
+	background-color:black;
+}
+  
+.section_two_content_div{
+	height:60%;
+	width:100%;
+	background-color: black;
+	margin-top:0;
+	display:block;
+}  
+  
+.section_two_content_div input{
+	float:left;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	//margin-left: 4%;
+	width: 95%;	
+	font-size:1.5vw;	
+}    
+  
+#section_three{
+	width:15%;
+	background-color:black;
+}
+
+#section_three img{
+	width:40%;
+	top: 20%;
+	//filter: invert(100);
+	border-radius: 50%;
+	border: solid 3px #00D9AF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	//top: 50%;
+	transform: translateY(10%);
+	//margin-bottom: auto;	
+}
+  
+#section_four{
+	width:20%;
+	background-color:black;
+	//height: 92%;
+	//margin-top:3%;
+	
+}
+
+#section_four div div input{
+	width: 55%;
+}
+
+#section_four div table tr.spaceUnder>td{
+	padding-bottom: 1em;
+}
+
+#section_four div table tr .labels{
+	font-size: 1.2vw;
+	font-weight:bold;
+}
+
+#section_four div {
+	float:left;
+}
+  
+  
+.section_four_top_div
+{
+	//height:95%;
+	padding-top:5%;
+	width:100%;
+	background-color: black;
+	margin-top:0;
+} 
+
+
+#enterArrow{
+	filter: invert(100);
+}
+  
+#section_five{
+	height:100%;
+	width:5%;
+	background-color:red;
+}
+ 
+#section_five div{	
+	height:50%;
+	width:100%;
+	background-color:black;
+}
+
+#section_five #imgContainer{
+	height:50%;
+	width:100%;
+	background-color:black;
+}
+#section_five #imgContainer img{
+	display: block;
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+	filter: invert(100);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+#masterDiv_1{
+	width: 100%;
+}
+
+#studioContainer{
+	margin 0;
+	width:100%;
+	background-color: black;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	height:81vh;
+
+}
+
+#studioArea{
+	width: 95%;
+	background-color: #0F0E16;
+	margin: 0 auto;
+	height: 75vh;
+
+}
+
+#recordingArea{
+	width: 80%;
+	background-color: #00D9AF;
+	height: 100%;
+	float:left;
+}
+
+#timeBar{
+	width:100%;
+	height:7%;
+}
+
+#blankArea{
+	width:19.8%;
+	height:100%;
+	background-color: #0F0E16;
+	float:left;
+}
+
+#timeBarArea{
+	width:80.2%;
+	height:100%;
+	background-color:#0F0E16;
+	float:left;
+	opacity: 0.9;
+}
+
+#Channels{
+	width: 100%;
+	height: 93%;
+	background-color: #00D9AF;
+	overflow-y:scroll; 
+	overflow-x:hidden;
+}
+
+.Channel{
+	background-color: lightblue;
+	height: 20%;
+	border: solid 1px #00D9AF;
+	opacity: 0.9;		
+}
+
+.ChannelControl{
+	width:20%;
+	height: 100%;
+	background-color: #0F0E16;	
+	float: left;
+}
+
+.ChannelControlRow1{
+	width:100%;
+	background-color:black;
+	height:30%;
+	
+}
+
+.channleNumber{
+	width:13%;
+	//height:10%;
+	background-color:black;
+	float:left;
+	border-bottom: 2px solid #00D9AF;
+	border-right: 2px solid #00D9AF;
+	border-bottom-right-radius: 60%;
+}
+.channleNumber p{
+	text-align: center;
+	font-weight: bold;
+	font-size:0.8rem;
+}
+.ChannelControlRow2{
+	width:100%;
+	background-color:black;
+	height:30%;
+	
+}
+
+
+
+.mute{
+	width:14%;
+	background-color:yellow;
+	border-radius:25%;
+	padding:2px;
+	margin-left:3%;
+	float:left;
+}
+
+.mute p {
+	text-align:center;
+	color:black;
+	font-size:0.5rem;
+	font-weight: bold;
+}
+.solo{
+	width:14%;
+	background-color:red;
+	border-radius:25%;
+	padding:2px;
+	margin-left:3%;
+	float:left;
+}
+
+.solo p {
+	text-align:center;
+	color:black;
+	font-size:0.5rem;
+	font-weight: bold;
+}
+
+.isChannelRecording{
+	width:14%;
+	height: 80%;
+	margin-right:8%;
+	float:right;
+}
+
+.isChannelRecording img{
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+
+}
+
+.audioName{
+	width:84%;
+	background-color:black;
+	margin: 0 auto;
+	float:right;	
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.audioName p{
+	text-align: center;
+	font-size: 0.8vw;
+	
+}
+.audioImage{
+	width:77%;
+	height: 100%;
+	background-color: #0F0E16;
+	opacity: 0.9;
+	float: left;
+}
+
+.audioImage img{
+	width:100%;
+	height:100%;
+}
+
+#audioDiv{
+	width: 14.9%;
+}
+
+.audioSize{
+	width:3%;
+	height: 100%;
+	background-color: gray;
+	float: right;
+}
+
+#sessionContainer{
+	height: 100%;
+	width:20%;
+	background-color: white;
+	float:right;
+}
+
+#sessionArea{
+	width:100%;
+	height:100%;
+	background-color:#0F0E16;
+}
+
+#controlsContainer{
+	height: 20%;
+	width:100%;
+	background-color: black;
+}
+#controlsArea{
+	height: 100%;
+	width: 90%;
+	margin: 0 auto;
+	border: solid 1px #009D86;
+}
+
+#sessionInfoContainer{
+	height: 20%;
+	width:90%;
+	margin: 0 auto;
+	background-color: #0F0E16;
+	border: solid 1px #009D86;
+}
+#sessionInfoArea{
+
+}
+
+.studioButton{
+	width:22%;
+	height: 40%;
+	background-color: black;
+	margin-top:3%;
+	margin-bottom:3%;
+	margin-left:8%;
+	float:left;
+}
+
+.studioButton img{
+	width:100%;
+	height:100%;
+}
+
+.studioLabel{
+	width:40%;
+	height: 12%;
+	background-color: black;
+	margin-top:5%;
+	margin-bottom:3%;
+	margin-left:8%;
+	float:left;
+}
+.studioLabel p{
+	text-align:center;
+	color:#89C1FF;
+	font-size: 1vw;
+	font-weight: bold;
+}
+
+#timeScroll{
+	background-color: lightblue;
+	width:3px;
+	height:100%;
+	position:absolute;
+	z-index:1;
+	opacity: 90;
+	//left:15%;
+	
+}
+</style>
+</head>
+<body id="body">
+
+<div id="first" >
+	
+	<div id="navContainer">
+		<div id="subNavContainer">
+		
+			<div id="section_one">
+				<div class="section_one_empty_div"></div>
+				<div class="section_one_content_div">
+					<p><a href="home.html">HOME</a></p>
+					<p><a href="course.html">COURSE</a></p>
+					<p><a href="groups.html">GROUPS</a></p>
+					<p><a href="studio.html">STUDIO</a></p>
+					<p><a href="dome.html">DOME</a></p>
+				</div>
+				<div class="section_one_empty_div"></div>
+			</div>
+			
+			<div id="section_two">
+				<div class="section_two_empty_div"></div>
+					<div class="section_two_content_div">
+						<input placeholder="Search" height="50"/>
+					</div>
+				<div class="section_two_empty_div"></div>
+				
+			</div>
+			
+			<div id="section_three">
+				<img src="./img/TariqMusica.png"/>
+			</div>
+			
+			<div id="section_four">
+				<div class="section_four_top_div">
+					<table>
+						<tr>
+							<td class="labels">LOGIN</td>
+							<td><input placeholder="username"/></td>
+						</tr>
+						<tr>
+							<td class="labels">SIGNUP</td>
+							<td><input placeholder="password"/></td>
+						</tr>
+						<tr>
+							
+							<td><img id="enterArrow" src="./img/enter-arrow.png"/></td></td>
+							<td><input type="button" value="enter"></td>
+							<td></td>
+							
+						</tr>
+					</table>
+				</div>
+
+			</div>
+			
+			<div id="section_five">
+				<div id="imgContainer"><img src="./img/hamburger-menu.png"/></div>
+				<div></div>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<!--img src="./img/navBar.png" style="width:100%;"/-->
+	<!--img src="./img/bodyDome.png" style="width:100%;height:80%;"-->
+	<main>
+		<div class="masterDiv_1" >	
+			<div id="studioContainer">			
+				<div id="studioArea">
+
+					<div id="recordingArea">
+						<div id="timeScroll" onmouseover="timeScrollHover()" onmouseup="repositionTimeScroll(event)">						
+						</div>
+						<div id="timeBar">
+							<div id="blankArea">
+							</div>
+							<div id="timeBarArea">
+							</div>
+						</div>
+				
+						<div id="Channels">
+							<div class="Channel" id="Channel_1">
+								<div class="ChannelControl" id="ChannelControl_1">
+									
+									<div class="ChannelControlRow1">
+										<div class="channleNumber">
+											<p id="channleNumber_1">1</p>
+										</div>
+										<div class="audioName">
+											<p id="audioName_1">Felt So Good - Instrumental</p>
+										</div>
+
+									</div>
+									<div class="ChannelControlRow2">
+										<div class="mute" id="mute_1" value="false">
+											<p id="muteBtn_1">M</p>
+										</div>
+										<div class="solo" id="solo_1" value="false">
+											<p id="soloBtn_1">S</p>
+										</div>
+										<div class="isChannelRecording" id="isChannelRecording_1" value="false">
+											<img src="./img/channelIsRecording.png" class="isChannelRecordingImg" id="isChannelRecordingImg_1"></img>
+										</div>
+									</div>
+								</div>
+								<div class="audioImage" id="audioImage_1">
+									<!--img src="./img/waveform.png"/-->
+								</div>	
+								<div class="audioSize" id="audioSize_1">
+								</div>								
+							</div>
+							<div class="Channel" id="Channel_2">
+								<div class="ChannelControl" id="ChannelControl_2">
+									<div class="ChannelControlRow1">
+										<div class="channleNumber">
+											<p id="channleNumber_2">2</p>
+										</div>
+										<div class="audioName">
+											<p id="audioName_2">Top Layer</p>
+										</div>
+									</div>
+								</div>
+								<div class="audioImage" id="audioImage_2">
+									<img src="./img/waveform.png"/>
+								</div>	
+								<div class="audioSize" id="audioSize_2">
+								</div>								
+							</div>
+							<div class="Channel" id="Channel_3">
+								<div class="ChannelControl" id="ChannelControl_3">
+									<div class="ChannelControlRow1">
+										<div class="channleNumber">
+											<p id="channleNumber_3">3</p>
+										</div>
+										<div class="audioName">
+											<p id="audioName_3">Back Layer</p>
+										</div>
+									</div>
+								</div>
+								<div class="audioImage" id="audioImage_3">
+									<img src="./img/waveform.png"/>
+								</div>	
+								<div class="audioSize" id="audioSize_3">
+								</div>								
+							</div>
+							<div class="Channel" id="Channel_4">
+								<div class="ChannelControl" id="ChannelControl_4">
+									<div class="ChannelControlRow1">
+										<div class="channleNumber">
+											<p id="channleNumber_4">4</p>
+										</div>
+										<div class="audioName">
+											<p id="audioName_4">Ad Lib 1</p>
+										</div>
+									</div>
+								</div>
+								<div class="audioImage" id="audioImage_4">
+									<img src="./img/waveform.png"/>
+								</div>	
+								<div class="audioSize" id="audioSize_4">
+								</div>								
+							</div>
+							<div class="Channel" id="Channel_5">
+								<div class="ChannelControl" id="ChannelControl_5">
+									<div class="ChannelControlRow1">
+										<div class="channleNumber">
+											<p id="channleNumber_5">5</p>
+										</div>
+										<div class="audioName">
+											<p id="audioName_5">Ad Lib 2</p>
+										</div>
+									</div>
+								</div>
+								<div class="audioImage" id="audioImage_5">
+								</div>	
+								<div class="audioSize" id="audioSize_5">
+								</div>								
+							</div>
+							<div class="Channel" id="Channel_6">
+								<div class="ChannelControl" id="ChannelControl_6">
+									<div class="ChannelControlRow1">
+										<div class="channleNumber">
+											<p id="channleNumber_6">6</p>
+										</div>
+										<div class="audioName">
+											<p id="audioName_6">Audio 5</p>
+										</div>
+									</div>
+								</div>
+								<div class="audioImage" id="audioImage_6">
+								</div>	
+								<div class="audioSize" id="audioSize_6">
+								</div>								
+							</div>
+							
+						</div>						
+					</div>
+					<div id="sessionContainer">
+						<div id="sessionArea">
+							<div id="controlsContainer">
+								<div id="controlsArea">
+									<div class="studioButton" id="btnRecord">
+										<img src="./img/recordBtn.png"/>
+									</div>
+									<div class="studioButton" id="btnPlay">
+										<img onclick="playBtn()" src="./img/playBtn.png"/>
+									</div>
+									<div class="studioButton" id="btnStop">
+										<img onclick="stopBtn()"src="./img/stopBtn.png"/>
+									</div>
+									<div class="studioLabel" id="lblSelectedChannel">
+										<p>Channel 1</p>						
+									</div>
+									<div class="studioLabel" id="lblTime">
+										<p>01:15:45</p>
+									</div>
+
+								</div>
+							</div>
+							<div id="sessionInfoContainer">
+								<div id="sessionInfoArea">
+									<p style="color:BLACK">SESSION INFO</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>	
+
+	<button class="record">Record</button>		
+	<button class="stop">Stop</button>	
+	<button id="playAudio" onclick="playAudioFile()">Play Audio</button>
+	<button id="getDuration" onclick="getDuration()">Get Duration</button>
+	<button id="posTest" onclick="posTest()">PosTest</button>
+
+	<article class="sound-clips">
+	</article>
+
+
+	</main>
+
+
+
+
+</div>
+
+
+<script>
+
+var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+var type = connection.effectiveType;
+
+function updateConnectionStatus() {
+  console.log("Connection type changed from " + type + " to " + connection.effectiveType);
+  type = connection.effectiveType;
+}
+
+connection.addEventListener('change', updateConnectionStatus);
+
+
+var audioDiv;
+var audioDivR;
+var audioDivL;
+var playing;
+var stopPlaying = false;
+var playInterval;
+var currentMousePos;
+
+
+var recordBtn = document.getElementById("recBtn");
+var playAudio = document.getElementById("playAudio");
+var blankArea = document.getElementById("blankArea");
+var Channels = document.getElementById("recordingArea");
+var timeScroll = document.getElementById("timeScroll");
+
+
+//set scroll bar position
+var blankSpaceWidth = blankArea.offsetWidth * 1.17;
+//blankSpaceWidth += 5;
+
+timeScroll.style.left =  blankSpaceWidth + "px";
+
+var ChannelsHeight = Channels.offsetHeight;
+timeScroll.style.height =  ChannelsHeight + "px";
+
+
+//document.addEventListener("mousedown", repositionTimeScroll);
+
+dragElement(document.getElementById("timeScroll"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+   // elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+
+
+
+
+
+//var recorder;
+playAudio.addEventListener("onclick", playAudioFile);
+
+function playAudioFile(){
+	console.log("Play Audio");
+	var a1 = document.getElementById("a1");
+	a1.play();
+}
+
+function stopAudioFile(){
+	console.log("Stop Audio");
+	var a1 = document.getElementById("a1");
+	a1.pause();
+}
+
+function getDivID(){
+	audioDiv = document.getElementById("audioDiv");	
+}
+
+function timeScrollHover(){
+	timeScroll.style.cursor = "ew-resize";
+}
+
+function repositionTimeScroll(e){
+
+	var recordBtn = document.getElementById("recBtn");
+	var playAudio = document.getElementById("playAudio");
+	var blankArea = document.getElementById("blankArea");
+	var Channels = document.getElementById("recordingArea");
+	var timeScroll = document.getElementById("timeScroll");
+	var audiosize = document.getElementById("audioSize_1");
+	var controlsArea = document.getElementById("controlsArea");
+	
+	//set scroll bar position
+	var blankSpaceWidth = blankArea.offsetWidth * 1.15;
+	var ChannelsWidth = Channels.offsetWidth * 0.990;// - (audiosize.offsetWidth * 0.8);// * 1.15;
+
+
+	var mousePositionX = e.clientX;
+	var mousePositionY = e.clientY;
+
+		if(mousePositionX < blankSpaceWidth)
+		{			
+			timeScroll.style.left = blankSpaceWidth + "px";
+		}
+		else if(mousePositionX > ChannelsWidth)
+		{
+			timeScroll.style.left = ChannelsWidth + "px";
+		}
+		else
+		{
+			timeScroll.style.left = mousePositionX;
+		}
+
+		
+	
+	
+	 console.log("X coords: " + mousePositionX + ", Y coords: " + mousePositionY);
+	//alert(mousePosition);
+	//timeScroll.style
+}
+
+
+/* getTimebarPos()
+*/
+function getTimebarPos()
+{
+	return document.getElementById("timeScroll").offsetLeft;
+}
+
+
+
+async function playBtn(e){
+	
+	playing = false;
+	if(stopPlaying !== true)
+	{
+		playInterval = setInterval(function(){
+		
+			var recordBtn = document.getElementById("recBtn");
+			var playAudio = document.getElementById("playAudio");
+			var blankArea = document.getElementById("blankArea");
+			var Channels = document.getElementById("recordingArea");
+			var timeScroll = document.getElementById("timeScroll");
+			var audiosize = document.getElementById("audioSize_1");		
+		
+			stopPlaying = false;
+			//console.log("2. Timescroll PlayBtn: " + timeScroll.offsetLeft);// = (timeScroll.style.left + 1) + "px";
+			var newTS = timeScroll.offsetLeft;// = (timeScroll.style.left++) + "px";
+			newTS += 1;
+			console.log("newTS: " + newTS + "px");
+			document.getElementById("timeScroll").style.left = newTS + "px";
+			
+			//console.log("DATA: " + timeScrollBarLeft + " " + audioDivL  + " " +  audioDivR);
+			
+			
+			if(newTS > audioDivL)
+			{
+				if(newTS < audioDivR)
+				{	
+					if(playing === false)
+					{
+						playAudioFile();
+						playing = true;
+					}
+				}
+			
+				else
+				{
+					stopAudioFile();
+					//clearInterval(playInterval);
+					
+				}
+			}
+		}, 100);
+	}	
+	
+}
+
+async function stopBtn(){
+
+	var recordBtn = document.getElementById("recBtn");
+	var playAudio = document.getElementById("playAudio");
+	var blankArea = document.getElementById("blankArea");
+	var Channels = document.getElementById("recordingArea");
+	var timeScroll = document.getElementById("timeScroll");
+	var audiosize = document.getElementById("audioSize_1");	
+	
+	document.getElementById("timeScroll").style.left = timeScroll.offsetLeft + "px";
+	
+	console.log("Stop Playing");
+	clearInterval(playInterval);
+	playing = false;
+}
+
+function getDuration(){
+	var duration = document.getElementById("a1").duration;
+	console.log("Duration: " +  duration);
+}
+
+
+var record = document.querySelector('.record');
+var stop = document.querySelector('.stop');
+var soundClips = document.querySelector('.sound-clips');
+var timebarOriginalPos;
+
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+	console.log('getUserMedia supported.');
+	navigator.mediaDevices.getUserMedia (
+	// constraints - only audio needed for this app
+	{
+	 audio: true
+	})
+
+	// Success callback
+	.then(function(stream) {
+		var mediaRecorder = new MediaRecorder(stream);
+		
+		var chunks = [];
+
+		mediaRecorder.ondataavailable = function(e) {
+		  chunks.push(e.data);
+		  console.log(e.data.toString());
+		}
+		
+		
+		record.onclick = function() {
+		  timebarOriginalPos = getTimebarPos();
+		  timebarOriginalPos = timebarOriginalPos - blankArea.offsetWidth * 1.15;
+		  mediaRecorder.start();
+		  console.log(mediaRecorder.state);
+		  console.log("recorder started");
+		  record.style.background = "red";
+		  record.style.color = "black";
+		}
+
+
+
+		stop.onclick = function() {
+		  mediaRecorder.stop();
+		  console.log(mediaRecorder.state);
+		  console.log("AB per/s: " + mediaRecorder.audioBitsPerSecond );
+		  console.log("Stream: " + mediaRecorder.stream);
+		  console.log("recorder stopped");
+		  record.style.background = "";
+		  record.style.color = "";
+		}
+
+
+		mediaRecorder.onstop = function(e) {
+			console.log("recorder stopped");
+
+			//var clipName = prompt('Enter a name for your sound clip');
+			var clipName = "clip";
+			var clipContainer = document.createElement('article');
+			var clipLabel = document.createElement('p');
+			var audio = document.createElement('audio');
+
+			var deleteButton = document.createElement('button');
+				   
+			clipContainer.classList.add('clip');
+			audio.setAttribute('controls', 'false');
+			audio.setAttribute('id', 'a1');
+
+
+			deleteButton.innerHTML = "Delete";
+			clipLabel.innerHTML = clipName;
+
+			clipContainer.appendChild(audio);
+			clipContainer.appendChild(clipLabel);
+			clipContainer.appendChild(deleteButton);
+			soundClips.appendChild(clipContainer);
+
+			var blob = new Blob(chunks, { 'type' : 'audio/ogg; codecs=opus' });
+			chunks = [];
+			console.log(blob.size);
+			console.log(blob.type);
+			console.log(blob.arrayBuffer());
+			var audioURL = window.URL.createObjectURL(blob);
+			audio.src = audioURL;
+
+			//var pixelSize = blob.size/500;
+			var pixelSize = blob.size * 0.00149;
+
+			var audioImage_1 = document.getElementById("audioImage_1");
+			var html = '<div id="' + 'audioDiv' + '"' + ' onmouseover="' + 'playAudioFile()' + '"' +  ' onmouseout=' +'"stopAudioFile()"'  + 'style="' + 'background-color:red;height:100%;width:'+pixelSize+ 'px;margin-left:' + timebarOriginalPos + 'px;' + '"' + '></div>';
+			//alert(html);
+			audioImage_1.innerHTML = html;
+
+			var audioElement = document.getElementById("audioDiv");
+			audioDivL = audioElement.offsetLeft;
+			audioDivR = audioDivL + audioElement.offsetWidth;
+
+			console.log("audioDivL: " + audioDivL + ", audioDivR: " + audioDivR);
+
+
+
+
+			deleteButton.onclick = function(e) {
+			var evtTgt = e.target;
+			evtTgt.parentNode.parentNode.removeChild(evtTgt.parentNode);
+		  }
+		}	
+	})
+
+	// Error callback
+	.catch(function(err) {
+		console.log('The following getUserMedia error occured: ' + err);
+	});
+} else {
+console.log('getUserMedia not supported on your browser!');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	//var component = document.getElementById("component");
+	//component.src = "component.html";
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+	
+	document.getElementById("Channels").addEventListener("click", alertSuccess);	
+	function alertSuccess(event){
+		alert("Event Data: " + event.target.id);
+	}
+	
+	
+	
+	function hideElement(id) {
+	  var x = document.getElementById(id);
+	  if (x.style.display === "none") {
+		x.style.display = "block";
+	  } else {
+		x.style.display = "none";
+	  }
+	}
+
+
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	
+	
+$(window).bind('mousewheel DOMMouseScroll', function(event) 
+{
+	var scale = 'scale(1)';
+	var firstChild = document.getElementById("body");
+    if(event.ctrlKey == true)
+    {
+		
+		document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+		document.body.style.msTransform =   scale;       // IE 9
+		document.body.style.transform = scale;     // General
+		//console.log(event.originalEvent.deltaY);
+        event.preventDefault();
+        if(event.originalEvent.deltaY > 0) {
+             console.log('Down');
+         }else{
+             console.log('Up');
+         }
+    }
+});
+	
+</script>
+
+</body>
+</html>
