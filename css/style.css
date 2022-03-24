@@ -1,0 +1,455 @@
+/*
+Free Html5 Responsive Templates
+Author: Kimmy
+Author URI: http://www.zerotheme.com/
+*/
+/* -------------------------------------------- */
+/* ------------------Reset--------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0px;}
+
+/* -------------------------------------------- */
+/* ------------------Font---------------------- */
+
+/*Add your font at here*/
+
+/* -------------------------------------------- */
+/* ------------------Style--------------------- */
+html, body {
+	width:99.5%; 
+	padding:0; 
+	margin:0 auto;
+	background-color: black;
+}
+body {background: #000; color: #474747;font: 12px/25px Arial, Helvetica, sans-serif;}
+
+a{color: #474747; text-decoration: none;}
+a:hover {color: #DA251D; text-decoration: none;}
+
+a.button{cursor: pointer;color: #ffffff;line-height: 14px;font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;	background: #3F3F3F;}
+a.button {display: inline-block;text-decoration: none;padding: 6px 12px 6px 12px;}
+a.button:hover{}
+
+.clear{content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* -------------------------------------------- */
+/* ------------------Header-------------------- */
+header {//background:#001E21;}
+header .wrap-header{ 
+	margin: 0 auto; 
+	width: 100%;
+}
+
+
+#logoContainer{	
+	width: 100%;
+	margin: auto;
+	background-color:black;
+}
+#subLogoContainer{
+	width: 100%;
+	margin: auto;
+	background-color:black;
+	border-bottom: 3px solid gold;
+	padding-bottom: 1%;
+	margin-bottom: 1%;
+}
+#logo { 	
+	width: 100%;
+	//height: 100%;
+	margin: 0 auto;
+	background-color:black;
+	position: center;
+}
+#mainImg{
+	display: block;
+	padding-top: 20px;
+	margin-left: auto;
+
+	margin-right: auto;
+	
+	
+}
+nav {}
+nav .wrap-nav{top:50px; right:0px; height: 33px; background:#000; width: 100%;}
+
+.wrap-nav{
+	border: 2px solid black;	
+	border-radius: 1%;
+	padding-bottom: 1.4%; 
+}
+
+.menu{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menuCentered{
+	margin-left: auto;
+	margin-right: auto;
+	//border: 3px solid #FFF;
+	width: 100%;
+	text-align: center;
+}
+
+.menuCentered .subMenuCentered {
+
+	//border: 3px solid red;	
+	display: inline-block;	
+	width: 100%;
+	margin: 0;
+
+
+}
+
+.menu div div ul {
+	list-style: none;
+	display:inline-block;
+    margin: 0 auto;
+
+	width: 100%;
+	
+	//background-color: white;
+	
+	
+
+
+}
+.menu div div ul li {
+
+	display: inline-block;
+	padding: 1% 1% 1% 1%;
+}
+.menu div div ul li:hover {background:#DA251D;}
+.menu div div ul li a {
+	font-size: 0.9rem; 
+	line-height:14px;
+	color: #00EBFF;
+	font-weight: bold;
+	display: block;
+	padding: 6px 10px;
+	margin-bottom: 0px;
+	z-index: 6;
+	position: relative; 
+	text-transform:uppercase;
+	
+}
+.menu div div ul li:hover a {color:#ffffff;}
+
+.minimenu{display:none;}
+.minimenu{position: relative;margin: 0px;background:#333333;}
+.minimenu div{overflow: hidden;position: relative;font: 18px/37px 'PT Sans Narrow';color: #fff;text-align:center;text-transform:uppercase;font-weight:bold;}
+.minimenu select{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; opacity: 0;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);	cursor: pointer;}
+
+#mainIframe{
+	margin: 0 auto;
+	padding-left: 0.2%;
+	padding-right: 0.2%;
+	width: 100%;
+}
+/* -------------------------------------------- */
+/* ------------------Featured---------------- */
+
+.featured{margin:2% auto;}
+
+.featured .wrap-featured{
+	//background:#00EBFF;
+	border: 3px solid black;
+	border-radius: 1%;
+	
+}
+	
+.wrap-featured .slider{padding: 3px;}
+.slider{
+	margin: 0 auto;
+	align: center;
+	
+}
+
+/* -------------------------------------------- */
+/* ------------------Content------------------- */
+
+#content .wrap-content{
+	background-color:#000; 
+	border: 3px solid black;
+	border-bottom: 3px solid gold;
+	border-radius: 1%;
+	margin-top: 30px; 
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+	
+
+.contentContainer{
+	//background-color: yellow;
+	margin: auto;
+	width: 100%;
+	display: inline-block;
+	
+	
+}
+
+.contentBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 6.8%;
+	padding-right: 1%;
+	width: 11%;
+	
+}
+
+.subContentContainer{
+	background-color: black;
+	margin: auto;
+	display: block;
+	//background-color: white;
+	width: 90%;
+	
+}
+
+
+
+.subSocialMediaContainer{
+	background-color: black;
+	margin: auto;
+	padding-bottom: 1%;
+	display: block;
+	//background-color: white;
+	border: 3px solid gold;
+	border-top: 3px solid black;
+	//border-radius: 2%;
+	width: 50%;
+	height:80%;
+	
+}
+
+.socialMediaBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 9.5%;
+	padding-right: 1%;
+	width: 20%;
+	
+}
+
+.subImageContainer{
+	background-color: black;
+	margin: auto;
+	display: block;
+	//background-color: white;
+	width: 90%;
+	
+}
+
+.imageBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 6.1%;
+	padding-right: 1%;
+	width: 40%;
+}
+
+.homeImageBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 6.1%;
+	padding-right: 1%;
+	width: 10%;
+}
+
+
+
+.youtubeBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 20%;
+	padding-right: 1%;
+	width: 60.5%;
+}
+
+.soundcloudBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 20%;
+	padding-right: 1%;
+	width: 60.5%;
+}
+
+.musicBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 20%;
+	padding-right: 1%;
+	width: 60%;
+}
+
+.aboutBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 11.2%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	width: 80%;
+}
+
+.aboutBlock div p {
+	font-size: 1rem;
+	float:left;
+	color: white;
+	padding-left: 10%;
+	padding-right: 2%;	
+	width: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#musicTrackContent .wrap-content{
+	background-color:#000; 
+	border: 3px solid black;
+	border-bottom: 3px solid gold;
+	border-radius: 1%;
+	margin-top: 30px; 
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+	
+
+.musicTrackContainer{
+	//background-color: yellow;
+	margin: auto;
+	width: 100%;
+	display: inline-block;
+}
+
+.musicTrackBlock{
+	display: inline-block;
+	padding-top: 3%;
+	padding-left: 4.0%;
+	padding-right: 1%;
+	width: 11%;
+}
+
+.subMusicTrackContainer{
+	background-color: black;
+	margin: auto;
+	display: block;
+	//background-color: white;
+	width: 90%;
+	
+}
+
+
+
+
+
+.block{
+	//margin: 0 auto;
+
+	//overflow: auto;
+	align: center;
+}
+
+.block h2 {
+	text-align: center;
+	color: white;
+	padding-top: 7%;
+	
+}
+
+.contactBlock{
+	display: inline-block;
+	padding-top: 3%;
+	//margin-left: 1%;
+
+	padding-right: 1%;
+	width: 100%;
+	//border: 3px solid gold;
+	
+}
+
+#contactTitle{
+	margin: 0 auto;
+	margin-bottom: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+	border-bottom: 3px solid gold;
+}
+
+#contactForm{
+	margin-left: 5%; 
+	//margin-right: 10%; 
+	//border: 3px solid gold;
+	width: 90%;
+
+	
+}
+
+#contactTable{
+	margin: auto;
+	margin-top:2%;
+	color: white;
+}
+
+#contactTable tr td{
+	padding-left: 3%;
+}
+
+#sendContact{
+	margin: 0 auto;
+}
+
+#musicPlatforms{
+	margin: 0 auto; width: 100%;
+}
+
+.block01 {text-align:center; padding-bottom:30px; }
+.block01 img{border:5px solid #CCCCCC;}
+.block01 h2{font-size:20px; line-height:30px;}
+
+.block02 {margin:10px; border-bottom:1px dashed #cccccc; border-top:1px dashed #cccccc; width: 100%;}
+.block02 p { padding:30px; font-size:24px; text-align:center; line-height:30px;}
+.block02 a {color:#DA251D;}
+
+.block03 {margin:30px 0;}
+.block03 h2{font-size:18px;}
+.block03 img{float:left; margin-right:10px;}
+
+/* -------------------------------------------- */
+/* ------------------Footer-------------------- */
+footer {
+	background-color:#001E21; 
+	margin-top:30px;
+	//border-top: 3px solid gold;
+}
+footer .wrap-footer{padding:10px 0px; color:#ffffff;}
+footer .box{}
+footer .heading{ padding:5px; border-bottom:3px solid #FFFFFF;}
+footer .heading h2{font-size:22px; font-weight:normal; display:inline; padding:0 5px;}
+footer .content{padding:5px}
+footer .content a{color:#DA251D; text-decoration:none;}
+footer .content .gallery img{ float:left; padding:5px; border:1px solid #CCC; margin:5px;}
+
+.copyright{text-align:center; margin-top:20px;}
+.copyright a{color:#ffffff; text-decoration:underline;}
+
+
+
+ 
