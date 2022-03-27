@@ -91,7 +91,7 @@ nav .wrap-nav{top:50px; right:0px; height: 33px; //background:#000; width: 100%;
 	position: relative; 
 	text-transform:uppercase;	
 }
-.menu div div ul li:hover a {color:#ffffff;}
+.menu div div ul li:hover a {color:aqua;}
 
 .minimenu{display:none;}
 .minimenu{position: relative;margin: 0px;background:#333333;}
