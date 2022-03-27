@@ -1,0 +1,21 @@
+<!DOCtype html>
+<head>
+</head>
+<header>
+</header>
+<body>
+  <main>
+    <h1>Web Dev References</h1>
+    <div>
+      <ol>
+        <li>HTML Entities - <a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank">https://www.w3schools.com/html/html_s...</a></li>
+        <li>HTML Validator - <a href="https://validator.w3.org/" target="_blank" >https://validator.w3.org/</a></li>
+        <li>MDN Web Docs HTML - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">https://developer.mozilla.org/en-US/d...</a></li>
+        <li>W3 Schools HTML - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">https://www.w3schools.com/html/defaul...</a></li>
+        <li>HTML Official Specifications - <a href="https://html.spec.whatwg.org/multipage/" target="_blank">https://html.spec.whatwg.org/multipage/</a></li>
+      <ol>
+    </div>
+  </main>
+</body>
+<footer>
+</footer>
