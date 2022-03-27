@@ -2,6 +2,30 @@
 <head>
 </head>
 <header>
+<nav>
+    <div class="wrap-nav">
+      <div class="menu">
+        <div class="menuCentered">
+          <div class="subMenuCentered">
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="#">About Me</a></li>  
+              <li><a href="#">Web Dev References</a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="minimenu"><img src="./media/img/menuicon.png" />
+        <select onchange="location=this.value">
+          <option></option>
+          <option value="index.html">Portfolio</option>
+          <option value="#">About Me</option>
+          <option value="#">Web Dev References</option>
+        </select>
+      </div>
+    </div>
+  </nav>
 </header>
 <body>
   <main>
