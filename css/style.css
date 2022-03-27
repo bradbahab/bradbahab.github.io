@@ -88,7 +88,7 @@ nav .wrap-nav{top:50px; right:0px; height: 33px; //background:#000; width: 100%;
 .menu div div ul li a {
 	font-size: 0.9rem; 
 	line-height:14px;
-	color: #00EBFF;
+	//color: #00EBFF;
 	font-weight: bold;
 	display: block;
 	padding: 6px 10px;
