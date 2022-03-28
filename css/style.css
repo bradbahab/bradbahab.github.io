@@ -159,6 +159,9 @@ div img {
 	margin: auto auto;
 	width:50%;
 }
+#introText div h1,#introText div p{
+	font-size: 2em;
+}
 #introImage {
 	width:49%;
 	float:right;
