@@ -1,8 +1,3 @@
-/*
-Free Html5 Responsive Templates
-Author: Kimmy
-Author URI: http://www.zerotheme.com/
-*/
 /* -------------------------------------------- */
 /* ------------------Reset--------------------- */
 
@@ -28,54 +23,6 @@ img{
    	width: auto\9; /* ie8 */
 }
 /* -------------------------------------------- */
-/* ------------------Font---------------------- */
-
-/*Add your font at here*/
-
-/* -------------------------------------------- */
-/* ------------------Style--------------------- 
-html, body {
-	width:99.5%; 
-	padding:0; 
-	margin:0 auto;
-	background-color: white;
-}
-
-
-a {
-	color: #474747; 
-	text-decoration: none;
-}
-a:hover {
-	color: #DA251D; 
-	text-decoration: none;
-}
-
-a.button {
-	cursor: pointer;
-	color: #ffffff;
-	line-height: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;	
-	background: #3F3F3F;
-}
-a.button {
-	display: inline-block;
-	text-decoration: none;
-	padding: 6px 12px 6px 12px;
-}
-a.button:hover{}
-
-.clear{
-	content: "\0020"; 
-	display: block; 
-	height: 0; 
-	clear: both; 
-	visibility: hidden; 
-}
-*/
-/* -------------------------------------------- */
 /* ------------------Header-------------------- */
 
 header { 
@@ -91,31 +38,6 @@ header {
 		background: linear-gradient(to left, #001730 6%, #001730 12%, #001730 60%, #001730 85%, #4AD7D1 99%);
 }
 
-/*
-nav {
-	margin: 0 auto; 
-	height: 100%;
-	width: 100%;
-	float: left;
-	background-color: #3b5998;
-	overflow: auto;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	//padding:  1%;
-}
-nav .wrap-nav{
-	//top:50px; 
-	//right:0px; 
-	//height: 33px; 
-	 
-	width: 100%;
-	overflow: auto;
-	overflow-x:  hidden;
-	overflow-y: hidden;
-
-
-}
-*/
 .wrap-nav{
 	width:  100%;
 	margin:  0 auto;
@@ -142,50 +64,7 @@ nav .wrap-nav{
 #menuAlt{
 	display: none;
 }
-/*
-.menuCentered{
-	margin-left: auto;
-	margin-right: auto;
-	//border: 3px solid #FFF;
-	width: 100%;
-	text-align: center;
-}
-.menuCentered .subMenuCentered {
-	//border: 3px solid red;	
-	display: inline-block;	
-	width: 100%;
-	margin: 0;
-}
-.menu div div ul {
-	list-style: none;
-	display:inline-block;
-    margin: 0 auto;
-	width: 100%;
-	//background-color: white;
-}
-.menu div div ul li {
-	display: inline-block;
-	padding: 1% 1% 1% 1%;
-}
-.menu div div ul li:hover {
-	background:#DA251D;
-}
-.menu div div ul li a {
-	font-size: 0.9rem; 
-	line-height:14px;
-	//color: #00EBFF;
-	//font-weight: bold;
-	display: block;
-	//padding: 6px 10px;
-	margin-bottom: 0px;
-	//z-index: 6;
-	position: relative; 
-	text-transform:uppercase;
-}
-.menu div div ul li:hover a {
-	color:#ffffff;
-}
-*/
+
 nav {
 	//overflow:  hidden;
 	width: 100%;
@@ -258,34 +137,7 @@ li a:hover {
 	//background-color: transparent;
 	//top: ;
 }
-/* -------------------------------------------- */
-/* ------------------Featured----------------
-.featured {
-	margin:2% auto;
-}
-.featured .wrap-featured {
-	border: 3px solid black;
-	border-radius: 1%;
-}
-.wrap-featured .slider {
-	padding: 3px;
-}
-.slider{
-	margin: 0 auto;
-	align: center;
-}
 
--------------------------------------------- */
-/* ------------------Content------------------- */
-/*
-section, article{
-	height: 100%;
-	overflow: auto;
-	overflow-x:  hidden;
-	overflow-y: hidden;
-	
-}
-*/
 
 main{
 	height:  100%;
