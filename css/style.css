@@ -146,8 +146,8 @@ div img {
 	float:left;
 	display: block;
 }
-#introText {
-	
+#introText div {
+	margin: 0 auto;
 }
 #introImage {
 	width:50%;
