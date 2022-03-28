@@ -161,6 +161,7 @@ div img {
 }
 #introImage img {
 	margin: 0 auto;	
+	display: block;
 }
 
 #webContent{
