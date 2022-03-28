@@ -145,6 +145,7 @@ div img {
 	width:50%;
 	float:left;
 	display: block;
+	border: 1px solid black;
 }
 #introText div {
 	margin: 0 auto;
@@ -153,11 +154,13 @@ div img {
 	width:50%;
 	float:right;
 	display: block;
+	border: 1px solid black;
 }
 #introImage div
 {
 	width:100%;
 	margin: 0 auto;
+	
 }
 #introImage img {
 	margin: 0 auto;	
