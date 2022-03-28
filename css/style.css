@@ -151,6 +151,10 @@ div img {
 	display: block;
 }
 
+#webContent{
+	width:100%;
+	display:block;
+}
 /* -------------------------------------------- */
 /* ------------------Footer-------------------- */
 footer {
