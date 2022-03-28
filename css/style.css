@@ -150,7 +150,7 @@ div img {
 }
 
 #introText {
-	width:50%;
+	width:49%;
 	float:left;
 	display: block;
 	border: 1px solid black;
@@ -160,7 +160,7 @@ div img {
 	width:50%;
 }
 #introImage {
-	width:50%;
+	width:49%;
 	float:right;
 	display: block;
 	border: 1px solid black;
