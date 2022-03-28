@@ -137,7 +137,8 @@ div img {
 
 #introContainer {
 	width:100%;
-	display: block;
+	display: inline-block;
+	border: 1px solid black;
 }
 
 #introText {
