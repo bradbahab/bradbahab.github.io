@@ -154,6 +154,11 @@ div img {
 	float:right;
 	display: block;
 }
+#introImage div
+{
+	width:100%
+	margin: 0 auto;
+}
 #introImage img {
 	margin: 0 auto;	
 }
