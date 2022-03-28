@@ -138,16 +138,19 @@ div img {
 }
 
 #introContainer {
-	width:100%;	
+	width:100%;
+	display: block;
 }
 
 #introText {
 	width:50%;
 	float:left;
+	display: block;
 }
 #introImage {
 	width:50%;
 	float:right;
+	display: block;
 }
 
 /* -------------------------------------------- */
