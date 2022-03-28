@@ -146,10 +146,16 @@ div img {
 	float:left;
 	display: block;
 }
+#introText {
+	
+}
 #introImage {
 	width:50%;
 	float:right;
 	display: block;
+}
+#introImage img {
+	margin: 0 auto;	
 }
 
 #webContent{
