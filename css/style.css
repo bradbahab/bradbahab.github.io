@@ -134,8 +134,22 @@ div{
 }
 
 div img {
-margin: 0 auto;	
+	margin: 0 auto;	
 }
+
+#introContainer {
+	width:100%;	
+}
+
+#introText {
+	width:50%;
+	float:left;
+}
+#introImage {
+	width:50%;
+	float:right;
+}
+
 /* -------------------------------------------- */
 /* ------------------Footer-------------------- */
 footer {
