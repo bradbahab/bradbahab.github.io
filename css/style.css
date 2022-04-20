@@ -22,14 +22,29 @@ html, body {
 	width:100%; 
 	padding:0; 
 	margin:0 auto;
-	//background-color: black;
+	background-color: black;
+	color:  white;
 }
-body {background: #FFF; color: #474747;font: 12px/25px Arial, Helvetica, sans-serif;}
+body {
+	//background: black; 
+	//color: #474747;
+	font: 12px/25px Arial, Helvetica, sans-serif;}
 
-a{color: #474747; text-decoration: none;}
-a:hover {color: #DA251D; text-decoration: none;}
+a{color: white; text-decoration: none;}
+a:hover {
+	color: white; 
+	text-decoration: none;
+}
 
-a.button{cursor: pointer;color: #ffffff;line-height: 14px;font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;	background: #3F3F3F;}
+a.button{
+	cursor: pointer;
+	color: #ffffff;
+	line-height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+	background: #3F3F3F;
+}
 a.button {display: inline-block;text-decoration: none;padding: 6px 12px 6px 12px;}
 a.button:hover{}
 
@@ -44,8 +59,15 @@ header .wrap-header{
 }
 
 
-nav {}
-nav .wrap-nav{top:50px; right:0px; height: 33px; //background:#000; width: 100%;}
+nav {
+	margin-bottom: 15px;
+}
+nav .wrap-nav{
+	top:50px; 
+	right:0px; 
+	height: 33px; 
+	//background:#000; 
+	width: 100%;}
 
 .wrap-nav{
 	//border: 2px solid black;	
@@ -86,9 +108,13 @@ nav .wrap-nav{top:50px; right:0px; height: 33px; //background:#000; width: 100%;
 	display: inline-block;
 	padding: 1% 1% 1% 1%;
 }
-.menu div div ul li:hover {background:#FFF;}
+.menu div div ul li:hover {
+	background:#FFF;
+	border-radius: 20%;
+}
 .menu div div ul li a {
 	font-size: 0.9rem; 
+	font-family:  "Optima";
 	line-height:14px;
 	//color: #00EBFF;
 	font-weight: bold;
@@ -99,7 +125,9 @@ nav .wrap-nav{top:50px; right:0px; height: 33px; //background:#000; width: 100%;
 	position: relative; 
 	text-transform:uppercase;	
 }
-.menu div div ul li:hover a {color:aqua;}
+.menu div div ul li:hover a {
+	color:black;
+}
 
 .minimenu{display:none;}
 .minimenu{position: relative;margin: 0px;background:#333333;}
@@ -147,8 +175,10 @@ div img {
 	width:100%;
 	height: 300px;
 	padding: 1%;
+	margin-top: 1%;
 	display: inline-block;
 	border: 1px solid black;
+	background: linear-gradient(to top left, #000000 41%, #666699 100%);
 }
 
 #introText {
@@ -169,6 +199,7 @@ div img {
 }
 #introText div h1,#introText div p{
 	font-size: 2em;
+	font-family:  "Optima";
 }
 #introImage {
 	width:49%;
@@ -189,11 +220,26 @@ div img {
 	//width:  100%;
 	height:  100%;
 	display: block;
+	border-radius: 50%;
 }
 
 #webContent{
 	width:100%;
-	display:block;
+	margin-top:  1%;
+	//display:block;
+}
+#projectsHeader{
+	width: 100%;
+	height: 40px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-bottom: 1px solid white;
+}
+#projectsHeader h2 {
+	font-size: 3em;
+	font-family:  "Optima";
+	text-align: center;
+	margin: 0 auto;
 }
 /* -------------------------------------------- */
 /* ------------------Footer--------------------- */
