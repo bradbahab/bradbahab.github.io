@@ -145,37 +145,49 @@ div img {
 
 #introContainer {
 	width:100%;
+	height: 300px;
+	padding: 1%;
 	display: inline-block;
 	border: 1px solid black;
 }
 
 #introText {
 	width:49%;
+	height: 100%;
 	float:left;
-	display: block;
 	border: 1px solid black;
+	margin:  0 auto;
+	
 }
 #introText div {
-	margin: auto auto;
-	width:50%;
+	margin: 0 auto;	
+	padding-top:  105px;
+	padding-left: 7%;
+	padding-right: 7%;
+	height: 100%;	
+	width:100%;
 }
 #introText div h1,#introText div p{
 	font-size: 2em;
 }
 #introImage {
 	width:49%;
+	height: 100%;
 	float:right;
 	display: block;
 	border: 1px solid black;
 }
 #introImage div
 {
-	width:100%;
+	//width:100%;
+	height: 100%;
 	margin: 0 auto;
 	
 }
 #introImage img {
 	margin: 0 auto;	
+	//width:  100%;
+	height:  100%;
 	display: block;
 }
 
