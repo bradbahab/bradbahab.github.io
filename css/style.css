@@ -18,17 +18,26 @@ input, textarea, select {margin:0; padding:0px;}
 
 /* -------------------------------------------- */
 /* ------------------Style--------------------- */
-html, body {
+html {
+
+}
+body {
 	width:100%; 
 	padding:0; 
 	margin:0 auto;
 	background-color: black;
 	color:  white;
-}
-body {
+	position:  sticky;
+	position:  -webkit-sticky;
+	width:100;
+	display:block;
+	overflow-x:  hidden;
+	left:  0;
+	top:  0;
 	//background: black; 
 	//color: #474747;
-	font: 12px/25px Arial, Helvetica, sans-serif;}
+	font: 12px/25px Arial, Helvetica, sans-serif;
+}
 
 a{color: white; text-decoration: none;}
 a:hover {
@@ -113,7 +122,7 @@ nav .wrap-nav{
 	border-radius: 20%;
 }
 .menu div div ul li a {
-	font-size: 0.9rem; 
+	font-size: 1.1rem; 
 	font-family:  "Optima";
 	line-height:14px;
 	//color: #00EBFF;
@@ -163,9 +172,6 @@ nav .wrap-nav{
 /* ------------------Content------------------- */
 
 
-.webImage{
-	width:10%;	
-}
 
 div img {
 	margin: 0 auto;	
@@ -175,6 +181,7 @@ div img {
 	width:100%;
 	height: 300px;
 	padding: 1%;
+	padding-top: 2%;
 	margin-top: 1%;
 	display: inline-block;
 	border: 1px solid black;
@@ -185,7 +192,7 @@ div img {
 	width:49%;
 	height: 100%;
 	float:left;
-	border: 1px solid black;
+	//border: 1px solid black;
 	margin:  0 auto;
 	
 }
@@ -206,7 +213,7 @@ div img {
 	height: 100%;
 	float:right;
 	display: block;
-	border: 1px solid black;
+	//border: 1px solid black;
 }
 #introImage div
 {
@@ -241,6 +248,46 @@ div img {
 	text-align: center;
 	margin: 0 auto;
 }
+
+.projectCard{
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	//border: 1px solid black;
+	//background: linear-gradient(to top left, #000000 41%, #666699 100%);
+
+
+}
+
+
+.projectCardContent{
+	margin: 0 auto;
+	width: 100%;
+}
+.projectCardContentTitle{
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.projectCardContentTitle h2{
+	text-align: center;
+	font-size: 1.2em;
+}
+.projectCardContentImg{
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+projectCardContentImg a{
+
+
+}
+.projectCardContentImg .webImage{
+	margin: 0 auto;
+	width: 40%;
+}
+
 /* -------------------------------------------- */
 /* ------------------Footer--------------------- */
 footer {
