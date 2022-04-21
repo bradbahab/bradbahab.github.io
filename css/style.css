@@ -238,14 +238,26 @@ div img {
 #introImage div img {
 	margin: 0 auto;	
 	display: inline-block;
-	width:  85%;
+	width:  80%;
 	height:  auto;
 	max-height: 100%;	
 	border-radius: 50%;
-	display: table-cell;
-	
+	display: table-cell;	
+	  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 }
-
+#introImage div img:hover{
+	width:  90%;
+	height:  auto;
+	  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
 #webContent{
 	width:100%;
 	margin-top:  1%;
@@ -305,8 +317,21 @@ projectCardContentImg a{
 	margin: 0 auto;
 	margin-bottom: 2%;
 	width: 60%;
+		  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 
 }
+.projectCardContentImg .webImage: hover{
+		width: 90%;
+		  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+	}
 
 /* -------------------------------------------- */
 /* ------------------Footer--------------------- */
@@ -328,3 +353,4 @@ footer .content .gallery img{ float:left; padding:5px; border:1px solid #CCC; ma
 
 
 
+ 
