@@ -238,7 +238,7 @@ div img {
 #introImage div img {
 	margin: 0 auto;	
 	display: inline-block;
-	width:  100%;
+	width:  85%;
 	height:  auto;
 	max-height: 100%;	
 	border-radius: 50%;
@@ -303,7 +303,9 @@ projectCardContentImg a{
 }
 .projectCardContentImg .webImage{
 	margin: 0 auto;
-	width: 40%;
+	margin-bottom: 2%;
+	width: 60%;
+
 }
 
 /* -------------------------------------------- */
