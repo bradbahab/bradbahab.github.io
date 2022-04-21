@@ -1,0 +1,63 @@
+#underDevelopment{
+	position:  sticky;
+	position:  -webkit-sticky;
+	width:100;
+	display:block;
+	font-size:  0.5em;
+}
+body {
+			color:white;
+			background-color: #333;
+		}
+	  	#id_nav_container {
+			width:100%,
+			margin: 0 auto,
+			text-align:center,
+			min-width:280px,
+		}
+		#id_main_container {
+			width:75%,
+			margin: 0 auto,
+			text-align:center,
+			min-width:280px,
+			color:white,
+			background-color:black,
+		}
+		#id_first_wrapper{
+			color:white;
+			background-color: #333;
+		}
+		.btnLyricType {
+			width:15%,
+		}
+		
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		  position: -webkit-sticky; /* Safari */
+		  position: sticky;
+		  top: 0;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+		  background-color: #111;
+		}
+
+		.active {
+		  background-color: #4CAF50;
+		}
