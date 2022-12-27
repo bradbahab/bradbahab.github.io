@@ -1,1 +1,58 @@
-<!DOCtype html> <html> <head> <style> </style> <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script> <script> function showAnswer() 	{ 		var pAnswer = document.getElementById('answer'); 		pAnswer.style.visibility = "visible";		 	} 	</script> </head> <body> <h2>Number Trivia</h2> <h3>Question</h3> <p id="question"></p> <br/> <h3>Answer</h3> <p id="answer" style="visibility:hidden"></p> <button id="btnShowAnswer" onclick="showAnswer()">Show Answer</button> <button id="btnNewQuestion" onclick="apicall()">New Question</button> <script> function apicall(){ 	let num = Math.floor(Math.random() * 20); 	let url = 'http://numbersapi.com/' + num; 	let request = new XMLHttpRequest(); 	request.open('GET', url, true) 	request.send(); 	request.onload = () => { 		let res = request.response; 		res = res.replace(num, "What"); 		res = res.slice(0, -1) + '?'; 		document.getElementById('answer').innerText = num; 		document.getElementById('question').innerText = res; 		console.log(request.response); 		var pAnswer = document.getElementById('answer'); 		pAnswer.style.visibility = "hidden";	 	} } apicall(); </script> </body> <footer> </footer> </html>
+<!DOCtype html>
+<html>
+<head>
+<style>
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+  <script>
+  function showAnswer()
+	{
+		var pAnswer = document.getElementById('answer');
+		pAnswer.style.visibility = "visible";		
+	}  
+
+	</script>
+
+  
+</head>
+<body>
+<h2>Number Trivia</h2>
+
+<h3>Question</h3>
+<p id="question"></p>
+<br/>
+<h3>Answer</h3>
+<p id="answer" style="visibility:hidden"></p>
+<button id="btnShowAnswer" onclick="showAnswer()">Show Answer</button>
+<button id="btnNewQuestion" onclick="apicall()">New Question</button>
+<script>
+
+
+function apicall(){
+	let num = Math.floor(Math.random() * 20);
+	let url = 'http://numbersapi.com/' + num;
+	let request = new XMLHttpRequest();
+
+	request.open('GET', url, true)
+	request.send();
+	request.onload = () => {
+		let res = request.response;
+		res = res.replace(num, "What");
+		res = res.slice(0, -1) + '?';
+		document.getElementById('answer').innerText = num;
+		document.getElementById('question').innerText = res;
+		console.log(request.response);
+		var pAnswer = document.getElementById('answer');
+		pAnswer.style.visibility = "hidden";	
+	}
+}
+apicall();
+
+</script>
+</body>
+<footer>
+</footer>
+</html>
